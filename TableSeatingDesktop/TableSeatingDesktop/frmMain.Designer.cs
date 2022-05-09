@@ -1,6 +1,6 @@
 ﻿namespace TableSeatingDesktop
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -165,6 +165,7 @@
             this.btnAddAttendee.Size = new System.Drawing.Size(25, 23);
             this.btnAddAttendee.TabIndex = 11;
             this.btnAddAttendee.UseVisualStyleBackColor = true;
+            this.btnAddAttendee.Click += new System.EventHandler(this.btnAddAttendee_Click);
             // 
             // btnRemoveAttendee
             // 
@@ -175,12 +176,13 @@
             this.btnRemoveAttendee.Size = new System.Drawing.Size(25, 23);
             this.btnRemoveAttendee.TabIndex = 12;
             this.btnRemoveAttendee.UseVisualStyleBackColor = true;
+            this.btnRemoveAttendee.Click += new System.EventHandler(this.btnRemoveAttendee_Click);
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 580);
+            this.ClientSize = new System.Drawing.Size(938, 493);
             this.Controls.Add(this.btnRemoveAttendee);
             this.Controls.Add(this.btnAddAttendee);
             this.Controls.Add(this.btnImportAttendees);
@@ -194,7 +196,7 @@
             this.Controls.Add(this.numSeats);
             this.Controls.Add(this.lblTableNum);
             this.Controls.Add(this.numTables);
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = "Table Seating Arrangement";
             ((System.ComponentModel.ISupportInitialize)(this.numTables)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSeats)).EndInit();
